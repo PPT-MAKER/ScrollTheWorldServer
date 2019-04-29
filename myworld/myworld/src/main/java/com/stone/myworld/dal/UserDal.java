@@ -29,6 +29,14 @@ public class UserDal extends DalBase {
 		return (Integer) execute("user_create", parameters).get("out_id");
 	}
 	
+	public User getById(Integer userId) {
+		return null;
+	}
+	
+	public User getByPhone() {
+		return null;
+	}
+	
 	public List<User> getAll() {
 		return executeReturnList("user_get_all", null, new UserMapper());
 	}
