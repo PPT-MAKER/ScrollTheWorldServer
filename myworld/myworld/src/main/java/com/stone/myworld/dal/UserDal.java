@@ -30,7 +30,9 @@ public class UserDal extends DalBase {
 	}
 	
 	public User getById(Integer userId) {
-		return null;
+		Map<String, Object> parameters = new HashMap<>();
+		parameters.put("in_user_id", userId);
+		return executeReturnObject("user_get_by_id", parameters, new UserMapper());
 	}
 	
 	public User getByPhone() {
