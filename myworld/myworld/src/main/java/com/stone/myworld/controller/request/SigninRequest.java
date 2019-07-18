@@ -2,20 +2,20 @@ package com.stone.myworld.controller.request;
 
 import org.springframework.util.StringUtils;
 
-public class LoginRequest {
-	private Integer userId;
+public class SigninRequest {
+	private String nickName;
 	private String password;
 	
 	public boolean valid() {
-		return userId != null && !StringUtils.isEmpty(password);
+		return !StringUtils.isEmpty(nickName) && !StringUtils.isEmpty(password);
 	}
 	
-	public Integer getUserId() {
-		return userId;
+	public String getNickName() {
+		return nickName;
 	}
 	
-	public void setUserId(Integer userId) {
-		this.userId = userId;
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
 	}
 	
 	public String getPassword() {

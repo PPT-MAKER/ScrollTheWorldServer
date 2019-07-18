@@ -11,6 +11,10 @@ public class UserManager {
 		return instance;
 	}
 	
+	public void create(User user) {
+		user.setId(UserDal.getInstance().create(user));
+	}
+	
 	public User getById(Integer userId) {
 		User user = null;
 		try {

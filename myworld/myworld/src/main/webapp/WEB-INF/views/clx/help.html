@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>clx助力工具测试版</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</head>
+<body>
+	Token:
+    <input id="token" type="text">
+    <button type="button">助力</button>
+</body>
+<script type="text/javascript">
+	$("button").click(function(){
+		var tokenStr = document.getElementById("token").value;
+	    $.get("/help?token=" + tokenStr);
+	});
+</script>
+</html>
