@@ -21,7 +21,7 @@
         </repository>  
 	</repositories> 
 	<properties>
-		<mysql-version>5.1.38</mysql-version>
+		<mysql-version>8.0.16</mysql-version>
 		<jwt-version>3.8.0</jwt-version>
 		<org.springframework-version>4.3.9.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
